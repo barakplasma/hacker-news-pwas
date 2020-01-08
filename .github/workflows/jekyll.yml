@@ -13,4 +13,4 @@ jobs:
     - name: change directory
       run: cd site
     - name: build
-      run: docker run --rm --volume="$PWD:/srv/jekyll" -it jekyll/builder:$JEKYLL_VERSION jekyll build
+      run: docker run --rm --volume="$PWD:/srv/jekyll" jekyll/builder:$JEKYLL_VERSION jekyll build
