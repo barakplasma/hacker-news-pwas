@@ -9,14 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Setup Ruby for use with actions
-      uses: actions/setup-ruby@v1.0.0
-    - name: Setup Node.js for use with actions
-      uses: actions/setup-node@v1.1.0
     - uses: actions/checkout@v1
     - name: jekyll-deploy-gh-pages
       uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
-    - name: run npm build
-      run: |
-        cd site && npm install && npm run build
-
