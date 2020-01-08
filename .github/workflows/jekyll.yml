@@ -19,5 +19,6 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/site \
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
-    - name: NPM or Yarn install with caching
-      uses: bahmutov/npm-install@v1.1.0
+    - name: run npm build
+      run: |
+        npm install && npm run build
