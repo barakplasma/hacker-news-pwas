@@ -17,3 +17,5 @@ jobs:
     - name: run npm build
       run: |
         cd site && gem install jekyll bundler && bundle install && npm install && npm run build && ls
+    - name: jekyll-deploy-gh-pages
+      uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
