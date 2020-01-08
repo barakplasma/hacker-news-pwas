@@ -21,4 +21,4 @@ jobs:
         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
     - name: run npm build
       run: |
-        npm install && npm run build
+        cd site && npm install && npm run build
