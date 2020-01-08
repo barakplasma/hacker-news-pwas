@@ -1,0 +1,23 @@
+---
+weight: 29
+title: 'WASM - Rust'
+github-title: 'ragingwind/wasm-hnpwa'
+library: 'wasm-pack, and wasm-bindgen'
+module-bundling: 'Webpack'
+service-worker: 'Application Shell + data caching with Workbox'
+perfomance-patterns: 'Brotli, CDN'
+server-side-rendering: 'no'
+api: 'api.hnpwa.com'
+hosting: 'Now'
+authors: 
+    - name: 'Jimmy'
+lighthouse: '96/100'
+interactive-em: '6.1 s'
+interactive-faster-3g: '3.3 s'
+lighthouse-link: https://www.webpagetest.org/lighthouse.php?test=200108_4D_28df9751ac96c82e4a67f0328f9df58c&run=3 
+wpt-em-link: https://www.webpagetest.org/result/200108_0B_4c850cd146d2e088380f239769b2fd56/
+wpt-faster-3g-link: https://www.webpagetest.org/result/200108_4D_28df9751ac96c82e4a67f0328f9df58c/
+image: /assets/images/wasm-hnpwa.png
+app-link: https://wasm-hnpwa.now.sh/
+github-link: https://github.com/ragingwind/wasm-hnpwa
+---
