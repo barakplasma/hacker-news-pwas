@@ -14,8 +14,9 @@ jobs:
     - name: Setup Node.js for use with actions
       uses: actions/setup-node@v1.1.0
     - uses: actions/checkout@v1
-    - name: run npm build
-      run: |
-        cd site && gem install jekyll bundler && bundle install && npm install && npm run build && ls
     - name: jekyll-deploy-gh-pages
       uses: BryanSchuetz/jekyll-deploy-gh-pages@v2.0
+    - name: run npm build
+      run: |
+        cd site && npm install && npm run build
+
