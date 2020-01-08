@@ -16,6 +16,4 @@ jobs:
     - uses: actions/checkout@v1
     - name: run npm build
       run: |
-        cd site && gem install jekyll bundler && bundle install && npm install && npm run build
-    - name: Jekyll Action
-      uses: helaili/jekyll-action@1.0
+        cd site && gem install jekyll bundler && bundle install && npm install && npm run build && ls
