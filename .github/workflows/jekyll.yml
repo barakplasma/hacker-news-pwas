@@ -13,4 +13,4 @@ jobs:
     - name: change directory
       run: cd site
     - name: build
-      run: docker run --rm --volume="$PWD:/srv/jekyll" -d jekyll/builder bundle install && jekyll build
+      run: docker run --rm --volume="$PWD:/srv/jekyll" -d jekyll/builder bundle install jekyll build
