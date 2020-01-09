@@ -18,4 +18,4 @@ jobs:
           --volume="$PWD:/srv/jekyll" \
           --volume="$PWD/vendor/bundle:/usr/local/bundle" \
           jekyll/jekyll:$JEKYLL_VERSION \
-          bundle install && jekyll build
+          jekyll build
