@@ -15,7 +15,7 @@ jobs:
 #     - name: build
 #       run: docker run --rm --volume="$PWD:/srv/jekyll" -d jekyll/builder bundle install jekyll build
     - name: build2
-      run: 
+      run: |
         export JEKYLL_VERSION=3.8
         docker run --rm \
           --volume="$PWD:/srv/jekyll" \
