@@ -10,15 +10,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: change directory
-      run: cd site
-#     - name: build
-#       run: docker run --rm --volume="$PWD:/srv/jekyll" -d jekyll/builder bundle install jekyll build
-    - name: build2
+    - name: build
       run: |
+        cd site
         export JEKYLL_VERSION=3.8
         docker run --rm \
           --volume="$PWD:/srv/jekyll" \
           --volume="$PWD/vendor/bundle:/usr/local/bundle" \
           jekyll/jekyll:$JEKYLL_VERSION \
           bundle install
+        docker run --rm \
+          --volume="$PWD:/srv/jekyll" \
+          --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+          jekyll/jekyll:$JEKYLL_VERSION \
+          jekyll build
