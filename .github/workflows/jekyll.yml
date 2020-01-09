@@ -18,9 +18,4 @@ jobs:
           --volume="$PWD:/srv/jekyll" \
           --volume="$PWD/vendor/bundle:/usr/local/bundle" \
           jekyll/jekyll:$JEKYLL_VERSION \
-          bundle install
-        docker run --rm \
-          --volume="$PWD:/srv/jekyll" \
-          --volume="$PWD/vendor/bundle:/usr/local/bundle" \
-          jekyll/jekyll:$JEKYLL_VERSION \
-          sudo jekyll build
+          bundle install && jekyll build
